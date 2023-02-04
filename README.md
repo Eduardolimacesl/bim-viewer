@@ -3,10 +3,9 @@
 </p>
 
 <div align="center" style="display:flex; justify-content: center; align-items: center; gap:0.5rem;">
-  <h1 style="flex: 1;">Basic IFC.js study</h1>
+  <h1>Basic IFC.js study</h1>
   <img src="./public/images/ifcjs-logo.png" width=40 height= 40 align="right">
 </div>
 
 ___
-
 
