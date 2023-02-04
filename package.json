@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
-    "watch": "rollup -c --bundleConfigAsCjs -w "
+    "build": "rollup -c",
+    "watch": "rollup -c -w ",
+    "update-ifcjs": "npm i web-ifc-three@latest && npm i && npm run copy-wasm",
+		"copy-wasm": "cp node_modules/web-ifc/web-ifc.wasm . && cp node_modules/web-ifc/web-ifc-mt.wasm ."
   },
   "keywords": [],
   "author": "",
