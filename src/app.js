@@ -8,6 +8,7 @@ import {
   WebGLRenderer,
 } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { IFCLoader } from "web-ifc-three/IFCLoader";
 
 //Creates the Three.js scene
 const scene = new Scene();
@@ -70,3 +71,18 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(size.width, size.height);
 });
+
+// IFC load file feature.
+const ifcLoader = new IFCLoader()
+ifcLoader.ifcManager.setWasmPath("../")
+
+const input = document.getElementById("file-input")
+input.addEventListener(
+  "change",
+  async (changed) => {
+    const ifcURL = URL.createObjectURL(changed.target.files[0]);
+    const model = await ifcLoader.loadAsync(ifcURL);
+    scene.add(model);
+  },
+  false
+)

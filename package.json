@@ -8,7 +8,7 @@
     "build": "rollup -c",
     "watch": "rollup -c -w ",
     "update-ifcjs": "npm i web-ifc-three@latest && npm i && npm run copy-wasm",
-		"copy-wasm": "cp node_modules/web-ifc/web-ifc.wasm . && cp node_modules/web-ifc/web-ifc-mt.wasm ."
+    "copy-wasm": "cp node_modules/web-ifc/web-ifc.wasm . && cp node_modules/web-ifc/web-ifc-mt.wasm ."
   },
   "keywords": [],
   "author": "",
