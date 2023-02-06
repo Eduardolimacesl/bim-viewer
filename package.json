@@ -14,11 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "git-commit-msg-linter": "^4.5.0",
     "rollup": "^3.13.0"
   },
   "dependencies": {
+    "dxf-writer": "^1.18.4",
     "three-mesh-bvh": "^0.5.23",
     "web-ifc-viewer": "^1.0.213"
   }
