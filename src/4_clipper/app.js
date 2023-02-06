@@ -15,9 +15,9 @@ async function init() {
 
 async function loadIfc(url) {
   // Load the model
-    const model = await viewer.IFC.loadIfcUrl(url);
-    await viewer.shadowDropper.renderShadow(model.modelID);
-    viewer.context.renderer.postProduction.active = true;
+  const model = await viewer.IFC.loadIfcUrl(url);
+  await viewer.shadowDropper.renderShadow(model.modelID);
+  viewer.context.renderer.postProduction.active = true;
 }
 
 loadIfc('../../ifcSamples/modified.ifc');
@@ -35,7 +35,6 @@ window.onkeydown = (event) => {
   } 
   if (event.code === "Escape") {
     viewer.clipper.active = false;
-    viewer.clipper.deletePlane();
+    showAllItems(viewer);
   }
 };
-

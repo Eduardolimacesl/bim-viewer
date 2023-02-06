@@ -18,7 +18,9 @@ ___
 - [x] User can clipper the model press "P" and cancel with "Escape";
 - [x] Mostrar propriedades do elemento selecionado em tela;
 - [x] Construção da árvore de entidades e mostrar ao usuário;
-- [ ] 
+- [x] feat: Filtro de entidades via checkbox;
+- [ ] feat: filtro com o click do mouse;
+- [ ] faet: Botão para filtrar todas as entidades que vieram com o modelo
 - [ ] feat: Botão que possibilita mostrar as propriedades do elemento selecionado;
 - [ ] feat: Botão que ativa e desativa a ferramenta de planos de cortes;
 - [ ] feat: Ao desativar a ferramenta de cortes todos os planos de corte já criados devem ser apagados;
