@@ -1,4 +1,5 @@
 import { IfcViewerAPI } from 'web-ifc-viewer';
+import { Color } from 'three';
 
 main();
 
@@ -50,7 +51,7 @@ function getWholeSubset(viewer, ifcModel, allIDs) {
 
 async function setupScene() {
   const container = document.getElementById('viewer-container');
-  const viewer = new IfcViewerAPI({ container });
+  const viewer = new IfcViewerAPI({ container, backgroundColor: new Color(0xffffff) });
   viewer.grid.setGrid();
   viewer.axes.setAxes();
   await viewer.IFC.setWasmPath('../../node_modules/web-ifc/');
