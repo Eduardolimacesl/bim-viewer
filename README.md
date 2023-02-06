@@ -17,10 +17,10 @@ ___
 - [x] User can select a element from model and highlight them;
 - [x] User can clipper the model press "P" and cancel with "Escape";
 - [x] Mostrar propriedades do elemento selecionado em tela;
-- [ ]  
+- [x] Construção da árvore de entidades e mostrar ao usuário;
 - [ ] 
-- [ ] Botão que possibilita mostrar as propriedades do elemento selecionado;
-- [ ] Botão que ativa e desativa a ferramenta de planos de cortes;
-- [ ] Ao desativar a ferramenta de cortes todos os planos de corte já criados devem ser apagados;
-- [ ] 
-- [ ] Aba lateral que mostra os modelos abertos na cena;
+- [ ] feat: Botão que possibilita mostrar as propriedades do elemento selecionado;
+- [ ] feat: Botão que ativa e desativa a ferramenta de planos de cortes;
+- [ ] feat: Ao desativar a ferramenta de cortes todos os planos de corte já criados devem ser apagados;
+- [ ] feat: Criar botão para abrir e fechar janela com ifc-tree;
+- [ ] feat: Aba lateral que mostra todos os modelos abertos na cena;
