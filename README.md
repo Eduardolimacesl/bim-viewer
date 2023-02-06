@@ -14,4 +14,5 @@ ___
 >Basic usage
 - [x] Show model from a local folder;
 - [x] User can choice your ifc file;
+- [x] User can select a element from model and highlight them;
 - [ ] 
