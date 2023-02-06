@@ -13,5 +13,5 @@ ___
 ### Tasks
 >Basic usage
 - [x] Show model from a local folder;
-- [ ] User can choice your ifc file;
+- [x] User can choice your ifc file;
 - [ ] 

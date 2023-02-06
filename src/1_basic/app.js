@@ -14,7 +14,6 @@ async function init() {
 }
 
 async function loadIfc(url) {
-		await viewer.IFC.setWasmPath("../../node_modules/web-ifc/");	
   // Load the model
     const model = await viewer.IFC.loadIfcUrl(url);
 
