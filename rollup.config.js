@@ -2,11 +2,11 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 
 export default {
-  input: './src/3_selection/app.js',
+  input: './src/4_clipper/app.js',
   output: [
     {
       format: 'esm',
-      file: './src/3_selection/bundle.js'
+      file: './src/4_clipper/bundle.js'
     },
   ],
   plugins: [
