@@ -16,10 +16,14 @@ ___
 - [x] User can clipper the model press "P" and cancel with "Escape";
 - [x] Mostrar propriedades do elemento selecionado em tela;
 - [x] Construção da árvore de entidades e mostrar ao usuário;
-- [x] feat: Filtro de entidades via checkbox;
-- [x] feat: esconder elementos clicando com o mouse;
-- [ ] feat: possibilitar o usuário a ver os itens hiden com checkbox para torná-los aparente novamente
+- [x] treino: Filtro de entidades via checkbox;
+- [x] treino: Esconder elementos clicando com o mouse;
+- [x] treino: Visualizar os planos de corte do modelo e possibilitar exportá-los;
+- [x] treino: Visualizar dimensões no modelo BIM;
+- [ ] feat: Criar botão para realizara as dimensões, apagar com "DEL" e sumir quando desativado o botão.
+- [ ] feat: Possibilitar o usuário a ver os itens hiden com checkbox para torná-los aparente novamente.
 - [ ] feat: filtro com o click do mouse;
+- [ ] feat: criar um menu que possibilite listar e exportar os planos de corte do modelo
 - [ ] faet: Botão para filtrar todas as entidades que vieram com o modelo
 - [ ] feat: Botão que possibilita mostrar as propriedades do elemento selecionado;
 - [ ] feat: Botão que ativa e desativa a ferramenta de planos de cortes;
