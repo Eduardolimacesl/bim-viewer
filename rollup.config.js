@@ -2,11 +2,11 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 
 export default {
-  input: './src/12_annotations/app.js',
+  input: './src/14_infor_preprocessing/app.js',
   output: [
     {
       format: 'esm',
-      file: './src/12_annotations/bundle.js',
+      file: './src/14_infor_preprocessing/bundle.js',
     },
   ],
   plugins: [resolve(), commonjs()],
