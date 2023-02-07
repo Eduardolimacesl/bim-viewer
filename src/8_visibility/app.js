@@ -14,17 +14,30 @@ async function main() {
   setupEvents(viewer, allIDs)
 }
 
+async function setupScene() {
+  const container = document.getElementById('viewer-container')
+  const viewer = new IfcViewerAPI({
+    container,
+    backgroundColor: new Color(0xffffff),
+  })
+  viewer.grid.setGrid()
+  viewer.axes.setAxes()
+  await viewer.IFC.setWasmPath('../../node_modules/web-ifc/')
+  return viewer
+}
+
+function getAllIds(ifcModel) {
+  return Array.from(new Set(ifcModel.geometry.attributes.expressID.array))
+}
+
 function setupEvents(viewer, allIDs) {
+  window.onmousemove = async () => await viewer.IFC.selector.prePickIfcItem()
   window.ondblclick = () => hideClickedItem(viewer)
   window.onkeydown = (event) => {
     if (event.code === 'Escape') {
       showAllItems(viewer, allIDs)
     }
   }
-}
-
-function getAllIds(ifcModel) {
-  return Array.from(new Set(ifcModel.geometry.attributes.expressID.array))
 }
 
 function replaceOriginalModelBySubset(viewer, ifcModel, subset) {
@@ -49,18 +62,6 @@ function getWholeSubset(viewer, ifcModel, allIDs) {
     removePrevious: true,
     customID: 'full-model-subset',
   })
-}
-
-async function setupScene() {
-  const container = document.getElementById('viewer-container')
-  const viewer = new IfcViewerAPI({
-    container,
-    backgroundColor: new Color(0xffffff),
-  })
-  viewer.grid.setGrid()
-  viewer.axes.setAxes()
-  await viewer.IFC.setWasmPath('../../node_modules/web-ifc/')
-  return viewer
 }
 
 function showAllItems(viewer, ids) {
