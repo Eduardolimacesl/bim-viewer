@@ -1,16 +1,13 @@
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 
 export default {
-  input: './src/8_visibility/app.js',
+  input: './src/9_multithreading/app.js',
   output: [
     {
       format: 'esm',
-      file: './src/8_visibility/bundle.js'
+      file: './src/9_multithreading/bundle.js',
     },
   ],
-  plugins: [
-    resolve(),
-    commonjs()
-  ]
-};
+  plugins: [resolve(), commonjs()],
+}
