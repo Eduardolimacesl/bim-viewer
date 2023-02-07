@@ -1,17 +1,15 @@
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
 
-<div align="center" style="display:flex; justify-content: center; align-items: center; gap:0.5rem;">
-  <h1>Basic IFC.js study
-    <img src="./public/images/ifcjs-logo.png" width=40 height= 40 align="right">
-  </h1>
-</div>
+# **Basic IFC.js study**
 
+<img src="./public/images/ifcjs-logo.png" width=40 height= 40 align="right" />
+
+![Shield](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ___
 
-### Tasks
+## Tasks
+
 >Basic usage
+
 - [x] Show model from a local folder;
 - [x] User can choice your ifc file;
 - [x] User can select a element from model and highlight them;
@@ -19,6 +17,8 @@ ___
 - [x] Mostrar propriedades do elemento selecionado em tela;
 - [x] Construção da árvore de entidades e mostrar ao usuário;
 - [x] feat: Filtro de entidades via checkbox;
+- [x] feat: esconder elementos clicando com o mouse;
+- [ ] feat: possibilitar o usuário a ver os itens hiden com checkbox para torná-los aparente novamente
 - [ ] feat: filtro com o click do mouse;
 - [ ] faet: Botão para filtrar todas as entidades que vieram com o modelo
 - [ ] feat: Botão que possibilita mostrar as propriedades do elemento selecionado;
