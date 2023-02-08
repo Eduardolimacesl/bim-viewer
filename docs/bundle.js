@@ -89677,12 +89677,9 @@ const customLayer = {
   onAdd: function () {
     const ifcLoader = new IFCLoader();
     // ifcLoader.ifcManager.setWasmPath('../../node_modules/web-ifc/')
-    ifcLoader.load(
-      '../ifcSamples/TESTED_Simple_project_01.ifc',
-      function (model) {
-        scene.add(model);
-      }
-    );
+    ifcLoader.load('./TESTED_Simple_project_01.ifc', function (model) {
+      scene.add(model);
+    });
 
     const directionalLight = new DirectionalLight(0x404040);
     const directionalLight2 = new DirectionalLight(0x404040);

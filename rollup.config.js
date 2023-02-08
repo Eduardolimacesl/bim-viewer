@@ -2,11 +2,11 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 
 export default {
-  input: './build/app.js',
+  input: './docs/app.js',
   output: [
     {
       format: 'esm',
-      file: './build/bundle.js',
+      file: './docs/bundle.js',
     },
   ],
   plugins: [resolve(), commonjs()],
